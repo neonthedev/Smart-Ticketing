@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart-Ticketing</title>
+    <link rel="shortcut icon" href="./images/bus-icon.png" type="image/x-icon" />
+    <!-- tailwind & DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Goolge Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+
+    <style>
+      /* Font Classes */
+      .font-raleway {
+        font-family: "Raleway", sans-serif;
+      }
+
+      .font-inter {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="w-4/5 mx-auto my-12">
+      <!-- Navbar starts -->
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-4xl font-extrabold">E-Ticket</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu text-xl menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn px-7 text-xl font-bold bg-[#1DD1001A] border-[#1DD10066] text-[#1DD100]"
+            >Bus
+            <img src="./images/bus-icon.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Banner Section starts -->
+      <section class="container mx-auto mt-3 px-3 lg:mt-12 font-raleway relative">
+        <div class="text-center space-y-4 bg-[url(images/banner.png)] bg-no-repeat bg-opacity-40 bg-cover p-14 lg:p-32 bg-bottom rounded-[40px]">
+          <h1 class="text-4xl lg:text-7xl font-extrabold text-white">End-to-End Travel with <br /><span class="text-[#1DD100]">P Paribahan</span></h1>
+          <div class="flex justify-center items-center">
+            <p class="max-w-[650px] text-white pt-5 pb-5">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+          </div>
+          <!-- This Button Has Functionality -->
+          <a href="#scroll-to-purchase"><button class="p-3 bg-[#1DD1001A] text-black bg-[#1DD100] text-xl rounded-xl font-bold border-[#1DD10066] border-2 hover:bg-sky-700">Buy Tickets</button> </a>
+        </div>
+        <!-- <div class=" hidden lg:visible flex-row justify-center translate-x-[15%] lg:translate-x-0 md:flex-row lg:flex gap-4 space-y-4 lg:space-y-0 absolute lg:top-[90%] lg:left-[23%] "></div> -->
+        <div class="flex-row lg:justify-center md:flex-row lg:flex gap-4 space-y-4 lg:space-y-0 lg:absolute top-0 lg:top-[90%] left-0 lg:left-[23%]">
+          <!-- card1 -->
+          <div class="flex shadow-2xl p-6 rounded-xl space-x-3 bg-white border-b-2 border-[#1DD100] rounded-3xl">
+            <img src="images/people.png" alt="" />
+            <div>
+              <h1 class="font-inter text-4xl font-semibold">500K+</h1>
+              <p>Registered users</p>
+            </div>
+          </div>
+          <!-- card2 -->
+          <div class="flex shadow-2xl p-6 rounded-xl space-x-3 bg-white border-b-2 border-[#1DD100] rounded-3xl">
+            <img src="images/ticket-cupon.png" alt="" />
+            <div>
+              <h1 class="font-inter text-4xl font-semibold">1.7 Lacks</h1>
+              <p>Ticket Sold</p>
+            </div>
+          </div>
+          <!-- card3 -->
+          <div class="flex shadow-2xl p-6 rounded-xl space-x-3 bg-white border-b-2 border-[#1DD100] rounded-3xl">
+            <img src="images/stoppage.png" alt="" />
+            <div>
+              <h1 class="font-inter text-4xl font-semibold">80K+</h1>
+              <p>Rental Partners</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Banner Section ends -->
+
+      <!-- Best Offer section Starts -->
+      <section class="container mx-auto mt-3 px-3 lg:mt-12 font-raleway text-center pt-15 lg:pt-28">
+        <h1 class="font-raleway text-[40px] font-bold">Best offers for you</h1>
+
+        <div class="flex-row space-y-2 lg:space-y-0 lg:flex justify-center gap-2 lg:gap-6 pt-6 lg:pt-12">
+          <!-- left Coupon -->
+          <div class="bg-[#FFBF0F] flex rounded-xl justify-center items-center pl-6 pr-6 text-left">
+            <div>
+              <!-- Things to do here -->
+              <h1 class="font-inter text-4xl font-extrabold"><span id="coupon-discount-1">15</span>% OFF</h1>
+
+              <p class="font-inter text-xl font-semibold">on your next purchase</p>
+              <p>use by January 2024</p>
+            </div>
+            <img src="images/cupon-devider.png" alt="" />
+            <div class="font-relway text-center">
+              <!-- Things to do with coupon -->
+              <h1 class="text-3xl font-bold" id="coupon-code-1">NEW15</h1>
+              <p>Coupon Code</p>
+            </div>
+          </div>
+
+          <!-- Right Coupon -->
+          <div class="bg-[#F78C9C] flex rounded-xl justify-center items-center pl-6 pr-6 text-left">
+            <div>
+              <!-- Things to do here -->
+              <h1 class="font-inter text-4xl font-extrabold"><span id="coupon-discount-2">20</span>% OFF</h1>
+
+              <p class="font-inter text-xl font-semibold">on your next purchase</p>
+              <p>use by January 2024</p>
+            </div>
+            <img src="images/cupon-devider.png" alt="" />
+            <div class="font-relway text-center">
+              <!-- Things to do with coupon -->
+              <h1 class="text-3xl font-bold" id="coupon-code-2">Couple 20</h1>
+              <p>Coupon Code</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="mt-14 p-3 bg-[#1DD1001A] text-[#1DD100] bg-white text-xl rounded-xl font-bold border-[#1DD10066] border-2">Show All Offers</button>
+      </section>
+
+      <!-- Best Offer section ends -->
+    </main>
+  </body>
+</html>
