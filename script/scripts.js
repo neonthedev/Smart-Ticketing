@@ -17,7 +17,6 @@ function getCouponCode(elementId) {
   const elementField = document.getElementById(elementId);
   const elementInnerText = elementField.innerText;
   const TextUpperCase = elementInnerText.toUpperCase();
-  // console.log(TextUpperCase)
   return TextUpperCase;
 }
 
@@ -32,7 +31,7 @@ for (const element of targetElements) {
     count++;
     //Stop After4 click
     if (count > 4) {
-      alert("You cannot buy more than 4 tickets");
+      alert("You can only purchase up to four tickets.");
       return;
     }
     if (count === 4) {
@@ -128,9 +127,7 @@ btn.addEventListener("click", function () {
   if (inputCoupon === secondCoupon) {
     const grandTotalInitial = getElementValue("grand-total-price");
     const discountPrice = grandTotalInitial * 0.2;
-    // console.log(discountPrice)
     const discountedGrandTotal = grandTotalInitial - discountPrice;
-    // console.log(discountedGrandTotal);
     setElementText("grand-total-price", discountedGrandTotal);
     document.getElementById("apply-btn").classList.add("hidden");
     document.getElementById("input-field").classList.add("hidden");
@@ -149,11 +146,16 @@ btn.addEventListener("click", function () {
     document.getElementById("input-field").value = "";
   }
   if (inputCoupon !== firstCoupon && inputCoupon !== secondCoupon) {
-    alert('Wrong Coupon Code Please Enter "NEW15" OR "Couple 20"');
+    alert('Wrong Coupon Code! Enter "NEW15" OR "Couple 20"');
     document.getElementById("apply-btn").disabled = false;
     document.getElementById("input-field").disabled = false;
 
     document.getElementById("apply-btn").style.backgroundColor = "#1DD100";
     document.getElementById("input-field").style.color = "red";
   }
+});
+const continueButton = document.querySelector("#continue");
+
+continueButton.addEventListener("click", () => {
+  location.reload();
 });
